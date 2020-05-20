@@ -15,7 +15,7 @@ public final class Database {
 
     private Database() {
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
             this.conn = DriverManager.getConnection(URL + DATABASE_NAME, USER_NAME, PASSWORD);
         } catch (Exception e) {
             e.printStackTrace();

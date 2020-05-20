@@ -1,3 +1,5 @@
+/* copy all and paste in MySql console */
+create database if not exists `gui_db` default character set utf8;
 use gui_db;
 
 CREATE TABLE categories(
